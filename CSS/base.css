@@ -1,0 +1,103 @@
+/*
+* @Author: Dell
+* @Date:   2018-09-22 14:32:56
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-09-22 17:04:53
+*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.main{
+    width: 1226px;
+    height: 460px;
+    margin:0 auto;
+}
+.center {
+  width: 1226px;
+  margin: 0 auto;
+   }
+.btn-orange {
+  background: #FF6700; }
+  /* 引入头部和底部样式设置 */
+.my_header{
+  width: 100%;
+  height: 100%;
+}
+.my_footer{
+	width: 100%;
+	height:506px;
+}
+.my_color{
+	color: #fff;
+}
+/*黄色下边框*/
+.frbb{
+    border-bottom: 3px solid #FF6700;
+    width:92%;
+}
+.font_orange{
+	color: #FF6700;
+}
+a.my_hover:hover{
+   color: #ff4515;
+    text-decoration: none;
+}
+.teal{
+    color: teal;
+}
+a.orange_hover:hover{
+    color: #FF6700;
+    text-decoration: none;
+}
+/*输入框格式*/
+.input_box {
+    width: 220px;
+    height: 40px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+}
+.box_yzm{
+    width: 110px;
+}
+/*隐藏和显示*/
+.hide{
+    display: none;
+}
+.show{
+    display:block;
+}
+.vali_info{
+    visibility: hidden;
+}
+.vali_success,.vali_fail{
+    background-repeat:no-repeat;
+    background-position:left center;
+    display:block;
+}
+/* 验证消息：验证通过时的样式 */
+.vali_success{
+    background-image:url("../image/ok.png");
+    padding-left:20px;
+    width:0px;height:20px;
+    overflow:hidden;
+}
+/* 验证消息：验证失败时的样式 */
+.vali_fail{
+    background-image:url("../image/err.png");
+    border:1px solid red;
+    background-color:#ddd;
+    color:Red;
+    padding-left:30px;
+}
+
+

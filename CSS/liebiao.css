@@ -1,0 +1,26 @@
+.phone1{
+    width: 230px;
+    background:rgb(250,250,250);
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+div.phone1:hover{
+    border:2px solid red;
+}
+div.phone1>h6:last-child{
+     color: #FF6700;
+ }
+div.phone1>h6:nth-child(2){
+    margin-top: 20px;
+}
+div.phone1>h6:nth-child(3){
+    color:rgb(176,176,176);
+    font-size: 12px;
+
+}
+div.phone1 img{
+    opacity: 0.8;
+}
+div.phone1 img:hover{
+    opacity: 1.0;
+}

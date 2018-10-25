@@ -1,0 +1,23 @@
+.self_info{
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    color:rgb(117,117,117);
+}
+.name_box{
+    width: 900px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #aaa;
+    margin-left: 48px;
+    border-radius: 3px;
+    background: rgb(253,253,253);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.name_box span{
+    color:rgb(117,117,117);
+}
+.name_box span.ml{
+    margin-left: 150px;
+}
