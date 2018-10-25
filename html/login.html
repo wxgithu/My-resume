@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" href="CSS/login.css">
+	<link rel="stylesheet" href="CSS/base.css">
+	<link rel="stylesheet" href="CSS/bootstrap.css">
+	<script src="js/jquery-1.11.3.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 登录logo -->
+	<div class="login_top center">
+		<a href="index.html"><img src="image/mistore_logo.png" alt="" class="ml-5"></a>
+	</div>
+	<div class="bg ">
+		<form  action="" class="center form">
+			<!-- 登录-->
+			<div class="login ">
+				<div class="row frbb m-auto">
+					<div class="col-lg-12 d-flex  ">
+						<h3 class="my_color mt-2">会员登录</h3>
+						<h5 class="my_color  move">您还不是我们的会员？</h5>
+						<a href="regist.html" class="font_orange my_hover  mt-2">立即注册</a>
+					</div>
+				</div>
+				<div class="row mt-5 ml-3">
+					<div class="col-lg-12">
+						<!--用户名-->
+						<div><span class="my_color">用户名:&nbsp;</span>
+						<input id="yhm" type="text" placeholder="请输入你的用户名" class="input_box" name="uname">
+							<div class="vali_info ml-5">
+								10个字符以内的字母、数字或下划线的组合
+							</div>
+						</div>
+					</div>
+				</div>
+
+					<div class="col-lg-12 ml-2 mt-4">
+						<!--密码-->
+						<div><span class="my_color">&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;</span> <input id="mima" type="password" placeholder="请输入你的密码" class="input_box" name="upwd">
+						<div class="vali_info ml-5">&nbsp;&nbsp;6位数字</div>
+						</div>
+					</div>
+
+				<div class="row mt-4 ml-3">
+					<div class="col-lg-12">
+						<!--验证码-->
+						<span class="my_color">验证码:&nbsp;</span> <input type="text" placeholder="请输入验证码" class=" input_box box_yzm" name="yzm">
+						<img src="image/yanzhengma.jpg" alt="" class="ml-2 mb-1">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<input type="submit" class="btn btn-orange text-white w-75  d-block button_top" value="立即登录">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="login_footer">
+		<div class="copyright text-center">简体 | 繁体 | English | 常见问题</div>
+		<div class="copyright text-center">小米公司版权所有-京ICP备10046444-<img src="image/ghs.png" alt="">京公网安备11010802020134号-京ICP证110507号</div>
+	</div>
+	<div class="foot_bg"></div>
+	<script src="js/login_yz.js"></script>
+</body>
+</html>
