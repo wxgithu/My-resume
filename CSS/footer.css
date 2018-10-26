@@ -10,7 +10,7 @@
     color: #696969;
 }
 .ic ul>li>span{
-    margin-left: 100px;
+    margin-left: 38px;
     color: #cccccc;
 }
 .help{
@@ -46,7 +46,7 @@ table tbody tr td a:hover{
 }
 .number .content .contact{
     border:1px solid #FF6700;
-    width: 30%;
+    width: 45%;
     margin: 0 auto;
     color: #FF6700;
 }
@@ -62,7 +62,9 @@ table tbody tr td a:hover{
 .footer .foot_content{
     height:90px;
 }
-.footer .sign{
-
+.brand{
+    margin-left: 760px;
+    margin-top: 16px;
 }
+
 
