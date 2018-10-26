@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客户中心-我的订单</title>
+    <link rel="stylesheet" href="css/customer.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<!--头部——欢迎-->
+<div class="welcome">
+    <div class="center">
+        <!--未登录头部状态-->
+        <div class="noLoginDiv">
+            欢迎来到中国联通！
+            <a href="#" id="pleaseLogin">[登录]</a>&nbsp;
+            <a href="#" class="orange">[免费注册]</a>&nbsp;
+            <a href="#" target="_blank">我的订单</a>
+        </div>
+        <!--登陆头部状态-->
+        <div class="LoginDiv d-none">
+            <!--时间，姓名变化-->
+            下午好，丁丁
+            <a href="#" id="signout">[退出]</a>&nbsp;
+            <a href="#" target="_blank">我的订单</a>
+        </div>
+        <ul class="list-unstyled float-right">
+            <li class="mall">
+                <a href="#" class="orange">我的联通</a>
+                <img src="img/icon_down.png">
+                <!--我的联通——隐藏下拉列表-->
+                <div class="my_lt hide">
+                    <ul>
+                        <li>
+                            <a href="#" class="orange">我的联通</a>
+                            <img src="img/icon_up.png">
+                        </li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">预约订单</a></li>
+                        <li><a href="#">个人信息</a></li>
+                        <li><a href="#">收货地址</a></li>
+                        <li><a href="#">密码修改</a></li>
+                        <li><a href="#">售后处理</a></li>
+                        <li><a href="#">安全中心</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li id="one">
+                更多电子服务<img src="img/icon_down.png">
+                <!--隐藏下拉-->
+                <div class="hide_serve hide">
+                    <ul>
+                        <li>更多电子服务<img src="img/icon_up.png"></li>
+                        <li><a href="#">手机营业厅</a></li>
+                        <li><a href="#">短信营业厅</a></li>
+                        <li><a href="#">微信营业厅</a></li>
+                        <li><a href="#">手机商城</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li id="two">
+                <a href="#">
+                    <img src="img/phone.png" class="mr-0">
+                    客户端下载
+                    <img src="img/icon_down.png">
+                </a>
+                <!--隐藏下拉列表-->
+                <div class="client">
+                    <img src="img/erwei.png" class="float-left">
+                    <div class="float-right">
+                        <img src="img/app.png" alt="">
+                        <img src="img/Android.png" >
+                    </div>
+
+                </div>
+            </li>
+            <li><a href="#" class="mr-2">网站地图</a></li>
+            <li><a href="#">企业门户</a></li>
+            <li>
+                <a href="#">
+                    <img src="img/weibo.png" alt="">
+                    关注微博
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--search-->
+<div class="header ">
+    <div class="center">
+        <div class="logo float-left">
+            <img src="img/logoNew.png" class="mt-3">
+        </div>
+        <div class="city float-left ml-4">
+            <span>辽宁</span>
+            <a href="#">
+                [切换地区<img src="img/trangle.png" alt="">]
+            </a>
+            <!--城市 hidden city-->
+            <div class="hidden_city d-none">
+                <ul class="list-unstyled">
+                    <li>
+                        <span>A-G</span>
+                        <a href="#" provincecode="11" citycode="110">北京</a>
+                        <a href="#" provincecode="30" citycode="305">安徽</a>
+                        <a href="#" provincecode="83" citycode="831">重庆</a>
+                        <a href="#" provincecode="38" citycode="380">福建</a>
+                        <a href="#" provincecode="51" citycode="510">广东</a>
+                        <a href="#" provincecode="87" citycode="870">甘肃</a>
+                        <a href="#" provincecode="59" citycode="591">广西</a>
+                        <a href="#" provincecode="85" citycode="850">贵州</a>
+                    </li>
+                    <li>
+                        <span>H-J</span>
+                        <a href="#" provincecode="71" citycode="710">湖北</a>
+                        <a href="#" provincecode="74" citycode="741">湖南</a>
+                        <a href="#" provincecode="18" citycode="188">河北</a>
+                        <a href="#" provincecode="76" citycode="760">河南</a>
+                        <a href="#" provincecode="50" citycode="501">海南</a>
+                        <a href="#" provincecode="97" citycode="971">黑龙江</a>
+                        <a href="#" provincecode="34" citycode="340">江苏</a>
+                        <a href="#" provincecode="90" citycode="901">吉林</a>
+                        <a href="#" provincecode="75" citycode="750">江西</a>
+                    </li>
+                    <li>
+                        <span>L-S</span>
+                        <a href="#" provincecode="91" citycode="910">辽宁</a>
+                        <a href="#" provincecode="10" citycode="101">内蒙古</a>
+                        <a href="#" provincecode="88" citycode="880">宁夏</a>
+                        <a href="#" provincecode="70" citycode="700">青海</a>
+                        <a href="#" provincecode="17" citycode="170">山东</a>
+                        <a href="#" provincecode="31" citycode="310">上海</a>
+                        <a href="#" provincecode="19" citycode="190">山西</a>
+                        <a href="#" provincecode="84" citycode="841">陕西</a>
+                        <a href="#" provincecode="81" citycode="810">四川</a>
+                    </li>
+                    <li>
+                        <span>T-Z</span>
+                        <a href="#" provincecode="13" citycode="130">天津</a>
+                        <a href="#" provincecode="89" citycode="890">新疆</a>
+                        <a href="#" provincecode="79" citycode="790">西藏</a>
+                        <a href="#" provincecode="86" citycode="860">云南</a>
+                        <a href="#" provincecode="36" citycode="360">浙江</a>
+                        <a href="#" provincecode="HK" citycode="HK">香港</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="float-right search-parent">
+            <div class="search">
+                <div class="float-left product">商品<img src="img/jt_down.png" alt=""></div>
+                <!--服务隐藏hover-->
+                <div class="d-none service">服务</div>
+                <input type="text" placeholder="王卡" class="float-left">
+                <a href="#" class="button float-right">搜索</a>
+            </div>
+            <div class="hotSearchBox">
+                <a href="#">冰神卡</a>
+                <a href="#">iPhone8</a>
+                <a href="#">iPhone7</a>
+                <a href="#">4G手机</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--nav-->
+<div class="clearfix"></div>
+<div  class="widthBg ">
+    <div class="center">
+        <div class="allSort float-left">
+            <div class="sortItem">
+                <h6 class="text-center">所有商品分类<img src="img/big_jt.png" class="ml-3"></h6>
+            </div>
+            <!--列表隐藏部分-->
+            <div class="d-none category"></div>
+        </div>
+        <div class="nav float-left">
+            <ul class="list-unstyled ">
+                <li><a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                <li><a href="#">自助服务</a></li>
+                <li><a href="#">积分商城</a></li>
+                <li><a href="#">老用户专区</a></li>
+                <li><a href="#">中小企业</a></li>
+            </ul>
+        </div>
+        <div class="orderCart float-right">
+            <a href="#" class="paying ">未付款订单(0)<img src="img/orange_down.png" class="ml-2"></a>
+            <a href="#" class="gotoOrder"><img src="img/cart.png" class="mr-2">去结算</a>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="section ">
+    <div class="center ">
+        <div class="left-side float-left">
+            <h3><a href="#">我的联通</a></h3>
+            <h2 class="">我的交易</h2>
+            <ul class="sidebar_nav list-unstyled mt-2">
+                <li><a href="#" >我的订单</a></li>
+                <li><a href="#" >业务办理记录</a></li>
+                <li><a href="#" >预约订单</a></li>
+                <li><a href="#" >免登录订单</a></li>
+                <li><a href="#" >售后处理订单</a></li>
+            </ul>
+            <h2 class="">我的账户</h2>
+            <ul class="sidebar_nav list-unstyled mt-2">
+                <li><a href="#" >个人信息</a></li>
+                <li><a href="#" >密码修改</a></li>
+                <li><a href="#" >账号绑定</a></li>
+                <li><a href="#" >号码管理</a></li>
+                <li><a href="#" >收货地址</a></li>
+                <li><a href="#" >机票联系人</a></li>
+                <li><a href="#" >登记记录</a></li>
+                <li><a href="#" >我的足迹</a></li>
+                <li><a href="#" >安全中心</a></li>
+            </ul>
+            <h2 class="">我的资产</h2>
+            <ul class="sidebar_nav list-unstyled mt-2">
+                <li><a href="#" >我的积分</a></li>
+                <li><a href="#" >我的代金券</a></li>
+                <li><a href="#" >我的奖励</a></li>
+                <li><a href="#" >分享有礼</a></li>
+            </ul>
+        </div>
+        <div class="right-side float-right">
+            <!--我的订单-->
+            <div class="my_list">
+                <h5 class="font-weight-bold">我的订单</h5>
+                <!--未登录订单状态-->
+                <div class="noLogin_order">
+                    <div class="information">
+                        <img src="img/womei.png" class="float-left">
+                        <div class="tipDiv float-left">
+                            <p>
+                                您还未登录，请
+                                <a class="a_blue" id="reLoginA" href="#">登录</a>
+                                查看更多信息！
+                            </p>
+                            <p>
+                                <a  class="a_blue" href="#">免登录订单</a>请直接点击查询！
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--登陆订单状态-->
+                <!---->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/customer.js"></script>
+</body>
+</html>
