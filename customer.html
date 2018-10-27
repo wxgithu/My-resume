@@ -34,7 +34,7 @@
                     <ul>
                         <li>
                             <a href="#" class="orange">我的联通</a>
-                            <img src="img/icon_up.png">
+                            <img src="img/icon_up.png" class="icon">
                         </li>
                         <li><a href="#">我的订单</a></li>
                         <li><a href="#">预约订单</a></li>
@@ -51,7 +51,7 @@
                 <!--隐藏下拉-->
                 <div class="hide_serve hide">
                     <ul>
-                        <li>更多电子服务<img src="img/icon_up.png"></li>
+                        <li>更多电子服务<img src="img/icon_up.png" class="icon"></li>
                         <li><a href="#">手机营业厅</a></li>
                         <li><a href="#">短信营业厅</a></li>
                         <li><a href="#">微信营业厅</a></li>
@@ -59,21 +59,26 @@
                     </ul>
                 </div>
             </li>
-            <li id="two">
-                <a href="#">
-                    <img src="img/phone.png" class="mr-0">
-                    客户端下载
-                    <img src="img/icon_down.png">
-                </a>
-                <!--隐藏下拉列表-->
-                <div class="client">
-                    <img src="img/erwei.png" class="float-left">
-                    <div class="float-right">
-                        <img src="img/app.png" alt="">
-                        <img src="img/Android.png" >
-                    </div>
+            <li id="two" >
+                <dl>
+                    <dt> <a href="#">
+                        <img src="img/phone.png" class="mr-0">
+                        客户端下载
+                        <img src="img/icon_down.png">
+                    </a>
+                    </dt>
+                    <!--隐藏下拉列表-->
+                    <dd>
+                        <div class="client hide">
+                            <img src="img/erwei.png" class="mt-2 ml-2">
+                            <a href="#" class="mt-2 mr-2"><img src="img/app.png " ></a>
+                            <a href="#" class="mt mr-2"><img src="img/Android.png" ></a>
+                            <span class="text1 ml-4">扫描立即下载</span>  <span class="text2">联通客户端</span>
+                        </div>
+                    </dd>
+                </dl>
 
-                </div>
+
             </li>
             <li><a href="#" class="mr-2">网站地图</a></li>
             <li><a href="#">企业门户</a></li>
@@ -98,7 +103,7 @@
                 [切换地区<img src="img/trangle.png" alt="">]
             </a>
             <!--城市 hidden city-->
-            <div class="hidden_city d-none">
+            <div class="hidden_city hide">
                 <ul class="list-unstyled">
                     <li>
                         <span>A-G</span>
@@ -151,7 +156,7 @@
             <div class="search">
                 <div class="float-left product">商品<img src="img/jt_down.png" alt=""></div>
                 <!--服务隐藏hover-->
-                <div class="d-none service">服务</div>
+                <div class="service hide">服务</div>
                 <input type="text" placeholder="王卡" class="float-left">
                 <a href="#" class="button float-right">搜索</a>
             </div>
@@ -171,9 +176,446 @@
         <div class="allSort float-left">
             <div class="sortItem">
                 <h6 class="text-center">所有商品分类<img src="img/big_jt.png" class="ml-3"></h6>
+                <!--列表隐藏部分-->
+                <div class="category hide">
+                    <div id="categoryList" class="allSortDetail hide">
+                        <!--file include-->
+                        <ul class="items ie6Png cateOne">
+                            <li class="item rela">
+                                <div class="overr">
+                                    <h3>
+                                        <span><a href="#">靓号专区</a>
+                                        <img src="img/new.png" alt="">
+                                        </span>
+                                        <img src="img/set.png" alt="">
+                                        <a href="#">号码</a>、
+                                        <a href="#">套餐</a>
+                                    </h3>
+                                </div>
+                                <div class="allSortList hide">
+                                    <dl class="fore">
+                                        <dt>选号码</dt>
+                                        <dd><a href="#">186</a>
+                                            <a href="#">185</a>
+                                            <a href="#">156</a>
+                                            <a href="#">155</a>
+                                            <a href="#">130</a>
+                                            <a href="#">131</a>
+                                            <a href="#">132</a>
+                                            <a href="#">176</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>4G套餐</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">4G全国套餐 </a>
+                                            <a href="#" class="cOrange">4G组合套餐 </a>
+                                            <a href="#" class="cOrange">4G校园套餐 </a>
+                                            <a href="#" class="cOrange">4G本地套餐 </a>
+                                            <a href="#" class="cOrange">冰淇淋套餐 </a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>优惠活动</dt>
+                                        <dd>
+                                            <a href="#">老用户优惠</a>
+                                            <a href="#">惠通卡</a>
+                                            <a href="#">快享卡</a>
+                                            <a href="#">久聊卡</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="item rela">
+                                <div class="overr">
+                                    <h3>
+                                        <span>
+                                            <a href="#" target="_blank">老用户0元购</a>       <img src="img/new.png" alt="">
+                                        </span>
+                                        <img src="img/ipo.png">
+                                        <a href="#">手机</a>
+                                    </h3>
+                                </div>
+                                <div class="allSortList price" style="display: none;">
+                                    <dl class="fore">
+                                        <dt>品牌</dt>
+                                        <dd>
+                                            <a href="#">苹果</a>
+                                            <a href="#">小米</a>
+                                            <a href="#">三星</a>
+                                            <a href="#">华为</a>
+                                            <a href="#">vivo</a>
+                                            <a href="#">酷派</a>
+                                            <a href="#">HTC</a>
+                                            <a href="#">联想</a>
+                                            <a href="#">魅族</a>
+                                            <a href="#">中兴</a>
+                                            <a href="#">诺基亚</a>
+                                            <a href="#">索尼</a>
+                                            <a href="#">华硕</a>
+                                            <a href="#">OPPO</a>
+                                            <a href="#">TCL</a>
+                                            <a href="#">金立</a>
+                                            <a href="#">海尔</a>
+                                            <a href="#">小辣椒</a>
+                                            <a href="#">乐视</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>活动</dt>
+                                        <dd>
+                                            <a href="#">存话费送手机</a>
+                                            <a href="#">买手机送话费</a>
+                                            <a href="#">老用户优惠购机 (支持合约到期提前预约)</a>
+                                            <a href="#">裸机热卖</a>
+                                            <a href="#">招联信用付0利息0手续费</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>特点</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">4G手机</a>
+                                            <a href="#" class="cOrange">双卡双待</a>
+                                            <a href="#" class="cOrange">千元智能机</a>
+                                            <a href="#" class="cOrange">大屏(4.0英寸以上)</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="item rela">
+                                <div class="overr">
+                                    <h3>
+                                        <img src="img/WIFI.png" alt="">
+                                        <a href="#">上网卡</a>、
+                                        <a href="#">配件</a>
+                                    </h3>
+                                </div>
+                                <div class="allSortList price" style="display: none;">
+                                    <dl class="fore">
+                                        <dt>上网卡套餐</dt>
+                                        <dd>
+                                            <a href="#">包月套餐</a>
+                                            <a href="#">包年套餐</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>活动</dt>
+                                        <dd>
+                                            <a href="#">存话费送手机</a>
+                                            <a href="#">买手机送话费</a>
+                                            <a href="#">老用户优惠购机 (支持合约到期提前预约)</a>
+                                            <a href="#">裸机热卖</a>
+                                            <a href="#">招联信用付0利息0手续费</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>配件类型</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">防护套膜</a>
+                                            <a href="#" class="cOrange">支架外设</a>
+                                            <a href="#" class="cOrange">存储卡设备</a>
+                                            <a href="#" class="cOrange">车载配件</a>
+                                            <a href="#" class="cOrange">电源电池</a>
+                                            <a href="#" class="cOrange">耳机音箱</a>
+                                            <a href="#" class="cOrange">数据线</a>
+                                            <a href="#" class="cOrange">鼠标键盘</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="item rela">
+                                <div class="overr">
+                                    <h3>
+                                        <img src="img/kd.png" alt="">
+                                        <a href="#">宽带</a>
+                                    </h3>
+                                </div>
+                                <div class="allSortList price" style="display: none;">
+                                    <dl class="fore">
+                                        <dt>宽带新装</dt>
+                                        <dd>
+                                            <a href="#">光宽带-流量王</a>
+                                            <a href="#">单宽带</a>
+                                            <a href="#">智慧沃家</a>
+                                            <a href="#">联通宽带电视IPTV</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>宽带续费</dt>
+                                        <dd>
+                                            <a href="#">包年续费</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>宽带服务</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">续费订单查询</a>
+                                            <a href="#" class="cOrange">光宽带-流量王订单查询</a>
+                                            <a href="#" class="cOrange">单宽带订单查询</a>
+                                            <a href="#" class="cOrange">宽带测速</a>
+                                            <a href="#" class="cOrange">智慧到家</a>
+                                            <a href="#" class="cOrange">沃家总管</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="item rela">
+                                <div class="overr">
+                                    <h3>
+                                        <img src="img/card.png" alt="">
+                                        <a href="#">充值卡</a>
+                                    </h3>
+                                </div>
+                                <div class="allSortList price" style="display: none;">
+                                    <dl class="fore">
+                                        <dt>充值卡</dt>
+                                        <dd>
+                                            <a href="#">20元面值</a>
+                                            <a href="#">30元面值</a>
+                                            <a href="#">50元面值</a>
+                                            <a href="#">100元面值</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="item rela">
+                                <div class="overr">
+                                    <h3>
+                                        <img src="img/money.png" alt="">
+                                        <a href="#">交费充值</a>
+                                    </h3>
+                                </div>
+                                <div class="allSortList price" style="display: none;">
+                                    <dl class="fore">
+                                        <dt>交话费</dt>
+                                        <dd>
+                                            <a href="#">手机/上网卡交费</a>
+                                            <a href="#">固话/宽带交费</a>
+                                            <a href="#">购买充值卡</a>
+                                            <a href="#">网上交费/购卡记录查询</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>联通商户</dt>
+                                        <dd>
+                                            <a href="#">缴费站交费(仅限空中充值业务)</a>
+                                            <a href="#">大额业务</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>沃商户</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">沃账户充值</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="item rela">
+                                <div class="overr">
+                                    <h3>
+                                        <img src="img/sel.png" alt="">
+                                        <a href="#">话费查询</a>
+                                    </h3>
+                                </div>
+                                <div class="allSortList price" style="display: none;">
+                                    <dl class="fore">
+                                        <dt>话费查询</dt>
+                                        <dd>
+                                            <a href="#">实时话费</a>
+                                            <a href="#">账户余额</a>
+                                            <a href="#">交费记录</a>
+                                            <a href="#">合约期查询</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>使用量查询</dt>
+                                        <dd>
+                                            <a href="#">余量查询</a>
+                                            <a href="#">上网卡使用量</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>账单查询</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">历史账单</a>
+                                            <a href="#" class="cOrange">详单查询</a>
+                                            <a href="#" class="cOrange">流量币账单</a>
+                                            <a href="#" class="cOrange">沃商店详单</a>
+                                            <a href="#" class="cOrange">集团客户账单</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>积分查询</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">积分兑换</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>其他查询</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">业务办理记录</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>电子单查询</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">电子发票查询及开具</a>
+                                            <a href="#" class="cOrange">电子受理单查询</a>
+
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="item rela">
+                                <div class="overr">
+                                    <h3>
+                                        <span>
+                                            <a href="#" target="_blank">流量包订购</a>
+                                             <img src="img/new.png" alt="">
+                                        </span>
+                                        <img src="img/tool.png" alt="">
+                                        <a href="#">业务办理</a>
+                                    </h3>
+                                </div>
+                                <div class="allSortList price hide">
+                                    <dl class="fore">
+                                        <dt>基础业务</dt>
+                                        <dd>
+                                            <a href="#">通话设置</a>
+                                            <a href="#">网龄升级计划</a>
+                                            <a href="#">20元套餐可选包办理</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>上网流量</dt>
+                                        <dd>
+                                            <a href="#">流量半年包</a>
+                                            <a href="#">流量包月</a>
+                                            <a href="#">闲时流量包</a>
+                                            <a href="#">流量加油包</a>
+                                            <a href="#">流量放心用</a>
+                                            <a href="#">WO+视频定向流量包</a>
+                                            <a href="#">假日畅游流量包</a>
+                                            <a href="#">音乐包</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>套餐变更</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">3G套餐变更</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>升级4G</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">升级4G套餐</a>
+                                            <a href="#" class="cOrange">升级4G组合套餐</a>
+                                            <a href="#" class="cOrange">升级4G状态查询</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>流量语音加油包</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">日租流量包</a>
+                                            <a href="#" class="cOrange">畅视</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>国际业务</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">国际、港澳台漫游</a>
+                                            <a href="#" class="cOrange">国际、港澳台长途</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>WLAN业务</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">WLAN开通/关闭</a>
+                                            <a href="#" class="cOrange">WLAN密码修改/重置</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>信用额度</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">调整信用额度</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>其它业务</dt>
+                                        <dd>
+                                            <a href="#" class="cOrange">服务密码设置</a>
+                                            <a href="#" class="cOrange">停机保号/复机</a>
+                                            <a href="#" class="cOrange">挂失/解挂</a>
+                                            <a href="#" class="cOrange">话费代扣</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="item rela">
+                                <div class="overr">
+                                    <h3>
+                                        <img src="img/persons.png" alt="">
+                                        <a href="#">便民服务</a>
+                                    </h3>
+                                </div>
+                                <div class="allSortList price" style="display: none;">
+                                    <dl class="fore">
+                                        <dt>品牌</dt>
+                                        <dd>
+                                            <a href="#">苹果</a>
+                                            <a href="#">小米</a>
+                                            <a href="#">三星</a>
+                                            <a href="#">华为</a>
+                                            <a href="#">vivo</a>
+                                            <a href="#">酷派</a>
+                                            <a href="#">HTC</a>
+                                            <a href="#">联想</a>
+                                            <a href="#">魅族</a>
+                                            <a href="#">中兴</a>
+                                            <a href="#">诺基亚</a>
+                                            <a href="#">索尼</a>
+                                            <a href="#">华硕</a>
+                                            <a href="#">OPPO</a>
+                                            <a href="#">TCL</a>
+                                            <a href="#">金立</a>
+                                            <a href="#">海尔</a>
+                                            <a href="#">小辣椒</a>
+                                            <a href="#">乐视</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>活动</dt>
+                                        <dd>
+                                            <a href="#">存话费送手机</a>
+                                            <a href="#">买手机送话费</a>
+                                            <a href="#">老用户优惠购机 (支持合约到期提前预约)</a>
+                                            <a href="#">裸机热卖</a>
+                                            <a href="#">招联信用付0利息0手续费</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <a href="#" class="cOrange">营业厅查询
+                                                   </a>
+                                            <a href="#" class="cOrange">短信指令查询</a>
+                                            <a href="#" class="cOrange">手机号码归属地查询</a>
+                                            <a href="#" class="cOrange">上网卡号查询</a>
+                                            <a href="#" class="cOrange">充值卡状态查询</a>
+                                            <a href="#" class="cOrange">宽带装移修进度查询</a>
+                                            <a href="#" class="cOrange">国际、港澳台漫游资费</a>
+                                            <a href="#" class="cOrange">安全中心</a>
+                                            <a href="#" class="cOrange">常见问题</a>
+                                            <a href="#" class="cOrange">历史投诉查询</a>
+                                            <a href="#" class="cOrange">电话“黑卡”举报</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="allSortBottom"></div>
+                </div>
             </div>
-            <!--列表隐藏部分-->
-            <div class="d-none category"></div>
         </div>
         <div class="nav float-left">
             <ul class="list-unstyled ">
@@ -187,17 +629,22 @@
         <div class="orderCart float-right">
             <a href="#" class="paying ">未付款订单(0)<img src="img/orange_down.png" class="ml-2"></a>
             <a href="#" class="gotoOrder"><img src="img/cart.png" class="mr-2">去结算</a>
+            <!--隐藏框-->
+            <div class="pay_hide pl-4 hide">
+                您没有未支付订单,赶紧去订购吧！
+            </div>
         </div>
     </div>
 </div>
 <!--内容-->
 <div class="section ">
     <div class="center ">
-        <div class="left-side float-left">
+        <div id="tabs">
+        <div class="left-side float-left" >
             <h3><a href="#">我的联通</a></h3>
             <h2 class="">我的交易</h2>
             <ul class="sidebar_nav list-unstyled mt-2">
-                <li><a href="#" >我的订单</a></li>
+                <li><a href="#tabs1" class="myorder">我的订单</a></li>
                 <li><a href="#" >业务办理记录</a></li>
                 <li><a href="#" >预约订单</a></li>
                 <li><a href="#" >免登录订单</a></li>
@@ -205,11 +652,11 @@
             </ul>
             <h2 class="">我的账户</h2>
             <ul class="sidebar_nav list-unstyled mt-2">
-                <li><a href="#" >个人信息</a></li>
-                <li><a href="#" >密码修改</a></li>
+                <li><a href="#tabs2" class="personinfo">个人信息</a></li>
+                <li><a href="#tabs3" class="updatePwd">密码修改</a></li>
                 <li><a href="#" >账号绑定</a></li>
                 <li><a href="#" >号码管理</a></li>
-                <li><a href="#" >收货地址</a></li>
+                <li><a href="#tabs4" class="address">收货地址</a></li>
                 <li><a href="#" >机票联系人</a></li>
                 <li><a href="#" >登记记录</a></li>
                 <li><a href="#" >我的足迹</a></li>
@@ -222,13 +669,14 @@
                 <li><a href="#" >我的奖励</a></li>
                 <li><a href="#" >分享有礼</a></li>
             </ul>
+
         </div>
         <div class="right-side float-right">
-            <!--我的订单-->
-            <div class="my_list">
+
+            <!--未登录订单状态-->
+            <div class="my_list hide">
                 <h5 class="font-weight-bold">我的订单</h5>
-                <!--未登录订单状态-->
-                <div class="noLogin_order">
+                <div class="noLogin_order ">
                     <div class="information">
                         <img src="img/womei.png" class="float-left">
                         <div class="tipDiv float-left">
@@ -244,9 +692,166 @@
                     </div>
 
                 </div>
-                <!--登陆订单状态-->
-                <!---->
             </div>
+            <!--登陆订单状态-->
+            <div class="bg hide" id="tabs1">
+                <!--标题-->
+                <h1>我的订单</h1>
+                <!--订单导航-->
+                <ul class="order_list">
+                    <li id="active"><a href="">网上购物</a></li>
+                    <li><a href="">交费购卡</a></li>
+                    <li><a href="">机票订购</a></li>
+                    <li><a href="">中小企业</a></li>
+                    <li><a href="">流量包</a></li>
+                </ul>
+                <!--订单搜索-->
+                <div class="search_mode">
+                    <input class="search_input" type="text" placeholder="商品名称，订单编号">
+                    <input class="btn" type="button" value="搜索">
+                </div>
+                <!--订单商品-->
+                <ul class="colName">
+                    <li>订单商品</li>
+                    <li>数量</li>
+                    <li>收货人</li>
+                    <li>订单金额</li>
+                    <li>实名登记</li>
+                    <li>
+                        <select name="" id="order_sel">
+                            <option value="">全部状态</option>
+                            <option value="">待付款</option>
+                            <option value="">待发货</option>
+                            <option value="">待开户</option>
+                            <option value="">已发货</option>
+                            <option value="">待确认</option>
+                            <option value="">施工中</option>
+                            <option value="">已取消</option>
+                            <option value="">交易成功</option>
+                            <option value="">安装成功</option>
+                        </select>
+                    </li>
+                    <li>订单操作</li>
+                </ul>
+                <!--订单详情-->
+                <div class="no_order">
+                    暂无订单，这就去挑选商品：<a href="">商城首页</a>
+                </div>
+                <!--底部分页-->
+                <div class="operationBottom">
+                    <ul>
+                        <li>共0条</li>
+                        <li><a href="" class="top">上一页</a></li>
+                        <li><a href="" class="num">1</a></li>
+                        <li><a href="" class="bot">下一页</a></li>
+                        <li>共1页</li>
+                        <li>跳转至</li>
+                        <li><input type="text"></li>
+                        <li>页</li>
+                        <li><a href="" class="sure">确定</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--个人信息-->
+            <div class="person hide" id="tabs2">
+                <!--标题-->
+                <h1>个人信息</h1>
+                <!--中间内容-->
+                <div>
+                    <!--左边信息-->
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td><span>用&nbsp;户&nbsp;&nbsp;名：</span></td>
+                            <td>156****7069</td>
+                        </tr>
+                        <tr>
+                            <td><span>真实姓名：</span></td>
+                            <td>李明</td>
+                        </tr>
+                        <tr>
+                            <td><span>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span></td>
+                            <td>男</td>
+                        </tr>
+                        <tr>
+                            <td><span>证件号码：</span></td>
+                            <td>13**************23</td>
+                        </tr>
+                        <tr>
+                            <td><span>证件地址：</span></td>
+                            <td>河北省张家口市******</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!--右边头像-->
+                    <div class="pic">
+                        <a href="">
+                            <img src="img/head.gif" alt="">
+                        </a>
+                        <span>
+                    请选择要上传的头像
+                    <input type="file">
+                </span>
+                        <p>支持JPG、PNG、JPEG、BMP文件大小5M以内</p>
+                    </div>
+                </div>
+            </div>
+            <!--密码修改-->
+            <div class="pwd hide" id="tabs3">
+                <h1>密码修改</h1>
+                <!--中间的内容:左边修改，右边提示-->
+                <div class="update">
+                    <!--上面修改密码错误提示信息-->
+                    <div class="err err_none">
+                        <span></span>
+                        请输入新密码
+                    </div>
+                    <!--左边修改-->
+                    <div class="left">
+                        <div>
+                            <span></span>
+                            <input type="text" placeholder="15612607069" id="phonenumber">
+                        </div>
+                        <div>
+                            <span></span>
+                            <input type="text" placeholder="请输入原密码">
+                        </div>
+                        <div>
+                            <span></span>
+                            <input type="text" placeholder="请输入新密码">
+                        </div>
+                        <div>
+                            <span></span>
+                            <input type="text" placeholder="请再次输入新密码">
+                        </div>
+                        <div>
+                            <button>确&nbsp;&nbsp;&nbsp;认&nbsp;&nbsp;&nbsp;修&nbsp;&nbsp;&nbsp;改</button>
+                        </div>
+                    </div>
+                    <!--右边提示-->
+                    <div class="right">
+                        <p>
+                            <span></span>
+                            温馨提示：
+                        </p>
+                        <ul class="update_list">
+                            <li>1、手机/上网卡密码为6位数字组合，不可设置简单密码：</li>
+                            <li>
+                                <ul>
+                                    <li>1）连续的升序或降序，如123456和654321</li>
+                                    <li>2）重复的数字顺序，如235235,575757</li>
+                                    <li>3）连续相同的数字，如999999</li>
+                                    <li>4）手机号码的任意连续6位</li>
+                                </ul>
+                            </li>
+                            <li>2、注册帐号密码为6-16位数字、字母，区分大小写</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </div>
