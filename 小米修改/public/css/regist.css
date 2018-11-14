@@ -1,0 +1,24 @@
+.register{
+    width: 1000px;
+    height:550px;
+    background:#fff;
+    border-radius: 6px;
+    margin:20px auto;
+}
+.regist_center{
+    width: 760px;
+    margin: 10px auto;
+}
+a.regist_button{
+    height:50px;
+    font-size: 25px;
+}
+.row span{
+    margin-left: 12px;
+    color: #ccc;
+    font-size: 12px;
+    font-weight:bold;
+}
+.row span:hover{
+    color: #FF6700;
+}
